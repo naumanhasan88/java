@@ -7,10 +7,12 @@ public class MultiplicatioNumber{
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number here : ");
         int number = scanner.nextInt();
+        System.out.println("Enter the number upto which you want the table : ");
+        int number2 = scanner.nextInt();
         scanner.close();
         
         for (int i = 1; i <= number; i++) {
-            for (int j = 1; j <= 10; j++) {
+            for (int j = 1; j <= number2; j++) {
                 int product = i * j;
                 System.out.println(i + " x " + j + " = " + product);
             }
